@@ -11,8 +11,35 @@
 
 </head>
 <body>
-  <div class="container">
-		<h1 class="h1">Bootstrap Cheatsheet<h1>
+  <div class="container d-flex  flex-column align-items-center">
+		<h1>Bootstrap Cheatsheet</h1>
+		<p>Jake Kressley</p>
+		<p class="text-center">This is just a simple page to help me remember some of the common bootstrap classes</p>
+		<h2>Forms</h2>
+		<p>This is a basic form that has an input, label, and button with no bootstrap</p>
+		<form class="p-2 m-3">
+			<label for="email">Email</label>
+			<input type="email" id="email">
+			<button>Submit</button>
+		</form>
+		<p class="text-center">This is what happens after you add the bootstrap classes, "form-label" and "form-control"</p>
+		<form>
+			<label for="email" class="form-label">Email</label>
+			<input type="email" id="email" class="form-control">
+			<button>Submit</button>
+		</form>
+		<div class="conatainer d-flex">
+			<form>
+				<label for="email" class="form-label">Email</label>
+				<input type="email" id="email" class="form-control-sm">
+				<button>Submit</button>
+			</form>
+			<form>
+				<label for="email" class="form-label">Email</label>
+				<input type="email" id="email" class="form-control-lg">
+				<button>Submit</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
